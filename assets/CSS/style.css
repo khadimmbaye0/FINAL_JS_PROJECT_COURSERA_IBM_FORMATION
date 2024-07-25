@@ -21,6 +21,7 @@ header {
     top: 0;
     z-index: 1000;
     position: relative;
+    position: fixed;
 }
 
 nav {
@@ -108,7 +109,7 @@ nav {
 
 .hero-content h1 {
     font-size: 60px;
-    margin-top: 15%;
+    margin-top: 40%;
     line-height: 1.2;
     text-transform: uppercase;
     font-weight: bold;
@@ -166,4 +167,34 @@ nav {
     width: 2px;
     margin: 0px 32px;
     background-color: #fff;
+}
+
+.aboutUs {
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.aboutUs h1{
+    font-size: 60px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-weight: 800;
+    margin-left: 175px;
+    color: #fff;
+}
+
+.txt {
+    margin: 40px auto;
+    padding: 30px 10px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 80%;
+    font-size: 15px;
+}
+
+.aboutUs p {
+    color: #fff;
+    padding: 5px;text-align: justify;
+    line-height: 1.5;
 }
