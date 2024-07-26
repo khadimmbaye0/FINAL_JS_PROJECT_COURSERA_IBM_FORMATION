@@ -18,9 +18,9 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    margin-left: 0;
     top: 0;
     z-index: 1000;
-    position: relative;
     position: fixed;
 }
 
@@ -47,6 +47,11 @@ nav {
     list-style: none;
     display: flex;
     gap: 20px;
+}
+
+.homePage {
+    background: rgba(0, 0, 0, 0.2);
+
 }
 
 .nav-links a {
@@ -94,7 +99,6 @@ nav {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .hero-content {
@@ -171,7 +175,7 @@ nav {
 
 .aboutUs {
     height: auto;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.2);
 }
 
 .aboutUs h1{
@@ -188,7 +192,7 @@ nav {
     margin: 40px auto;
     padding: 30px 10px;
     border-radius: 8px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.2);
     width: 80%;
     font-size: 15px;
 }
@@ -266,7 +270,7 @@ nav {
 
 .form {
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.2);
     padding: 30px;
 }
 
@@ -350,7 +354,6 @@ footer {
 
 footer p {
     text-align: center;
-    margin-bottom: 10px;
     padding: 5px;
     color: #fff;
 }
