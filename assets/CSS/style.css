@@ -1,3 +1,4 @@
+/* Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +20,6 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-left: 0;
     top: 0;
     z-index: 1000;
     position: fixed;
@@ -48,11 +48,6 @@ nav {
     list-style: none;
     display: flex;
     gap: 20px;
-}
-
-.homePage {
-    background: rgba(0, 0, 0, 0.2);
-
 }
 
 .nav-links a {
@@ -92,6 +87,7 @@ nav {
     position: relative;
     height: 100vh;
     margin-left: 20px;
+    z-index: -1;
 }
 
 .hero .overlay {
@@ -118,7 +114,6 @@ nav {
     line-height: 1.2;
     text-transform: uppercase;
     font-weight: bold;
-    font-weight: 800;
     margin-left: 30px;
 }
 
@@ -176,15 +171,13 @@ nav {
 
 .aboutUs {
     height: auto;
-    background: rgba(0, 0, 0, 0.2);
 }
 
-.aboutUs h1{
+.aboutUs h1 {
     font-size: 60px;
     line-height: 1.2;
     text-transform: uppercase;
     font-weight: bold;
-    font-weight: 800;
     margin-left: 175px;
     color: #fff;
 }
@@ -200,7 +193,8 @@ nav {
 
 .aboutUs p {
     color: #fff;
-    padding: 5px;text-align: justify;
+    padding: 5px;
+    text-align: justify;
     line-height: 1.5;
 }
 
@@ -213,12 +207,12 @@ nav {
     margin-top: 80px;
 }
 
-.cards{
+.cards {
     display: flex;
     margin-bottom: 30px;
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -233,7 +227,7 @@ nav {
     color: #fff;
 }
 
-.icon{
+.icon {
     width: 50px;
     height: 50px;
     background-color: #007081;
@@ -270,17 +264,15 @@ nav {
 }
 
 .form {
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.2);
+    height: auto;
     padding: 30px;
 }
 
-.form h1{
+.form h1 {
     font-size: 60px;
     line-height: 1.2;
     text-transform: uppercase;
     font-weight: bold;
-    font-weight: 800;
     margin-left: 175px;
     color: #fff;
 }
@@ -292,8 +284,7 @@ nav {
     align-items: center;
 }
 
-form{
-    background: rgba(0, 0, 0, 0.3);
+form {
     padding: 50px;
     width: 100%;
 }
@@ -304,7 +295,7 @@ form{
     border-radius: 10px;
 }
 
-#form label{
+#form label {
     color: #fff;
 }
 
@@ -363,6 +354,7 @@ footer p {
 .results {
     border-radius: 10px;
     background: none;
+    margin-left: 800px;
     margin-top: 35px;
     display: block;
     position: fixed;
@@ -375,17 +367,16 @@ footer p {
     overflow-x: hidden;
     padding: 20px;
     transition: .2s ease-in-out;
-
 }
 
 .resultJs {
     border-radius: 5px;
     padding: 0px;
     margin-top: 10px;
-    width: 40%;
+    width: 100%;
+    max-width: 600px;
     text-align: left;
     background: #fff;
-    margin-left: 750px;
 }
 
 .resultJs button {
@@ -400,8 +391,7 @@ footer p {
 
 .resultJs img {
     max-width: 100%;
-    height: 400px;
-    width: 100%;
+    height: auto;
     border-radius: 5px;
 }
 
@@ -417,9 +407,10 @@ footer p {
     padding-left: 10px;
 }
 
-#currentTime{
+#currentTime {
     display: none;
-    width: 528.5px;
+    width: 525px;
+    margin-left: 820px;
     margin-bottom: 10px;
     padding: 6px;
     text-align: center;
@@ -430,17 +421,172 @@ footer p {
     position: fixed;
     background-color: #007081;
     top: 10%;
-    margin-left: 770px;
 }
 
-.errorText{
+.errorText {
     color: #000;
     font-size: 20px;
-    margin-left: 1000px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 15px 30px;
-    margin-top: -20px;
+    margin-top: 20px;
     z-index: 1000;
     position: relative;
     background-color: #fff;
     border-radius: 10px;
+}
+
+/* Media Queries */
+
+@media (max-width: 1024px) {
+    .hero-content h1 {
+        font-size: 50px;
+    }
+
+    .hero-content p {
+        max-width: 250px;
+    }
+
+    .aboutUs h1 {
+        font-size: 50px;
+        margin-left: 20px;
+    }
+
+    .team, .cards, .containerSection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team {
+        margin-top: 30px;
+    }
+
+    .card {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .results {
+        margin: 10px auto;
+        width: 90%;
+    }
+
+    .resultJs {
+        width: 90%;
+        margin-left: 0;
+    }
+
+    #currentTime {
+        display: none;
+        width: 90%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+
+    .hero-content {
+        left: 5%;
+        transform: translateY(-50%);
+        text-align: left;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .hero-content p {
+        max-width: 100%;
+        margin: 20px 0;
+    }
+
+    .aboutUs h1 {
+        font-size: 40px;
+        margin-left: 20px;
+    }
+
+    .form {
+        padding: 20px;
+    }
+
+    #form {
+        width: 100%;
+    }
+
+    .results {
+        width: 100%; 
+        margin: 10px auto;
+        z-index: 10000;
+        position: relative;
+    }
+
+    .resultJs {
+        width: 90%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .aboutUs h1 {
+        font-size: 30px;
+        margin-left: 0;
+    }
+
+    .form {
+        padding: 15px;
+    }
+
+    .search-bar input {
+        width: 150px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .search-bar button,
+    .hero-content button,
+    .cards button,
+    #form button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .social-links {
+        left: 10px;
+    }
+
+    .resultJs {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #currentTime {
+        width: 100%;
+        margin-left: 0;
+    }
 }
