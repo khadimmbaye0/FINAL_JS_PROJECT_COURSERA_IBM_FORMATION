@@ -170,7 +170,7 @@ nav {
 }
 
 .aboutUs {
-    height: 100vh;
+    height: auto;
     background: rgba(0, 0, 0, 0.3);
 }
 
@@ -197,4 +197,70 @@ nav {
     color: #fff;
     padding: 5px;text-align: justify;
     line-height: 1.5;
+}
+
+.team {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    width: 90%;
+    margin-bottom: 30px;
+    margin-top: 80px;
+}
+
+.cards{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 25px;
+    padding: 20px 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.card h3 {
+    color: #fff;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    background-color: #007081;
+    border-radius: 8px;
+    margin: 10px auto;
+    border-radius: 50%;
+}
+
+.icon i {
+    margin: 13px auto;
+    font-size: 20px;
+    color: #fff;
+}
+
+.cards p {
+    font-size: 15px;
+}
+
+.cards button {
+    padding: 5px 20px;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    background-color: #007081;
+    margin-top: 10px;
+    color: #fff;
+    margin-bottom: 10px;
+    transition: .5s ease-in-out;
+}
+
+.cards button:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid #fff;
+    transform: scale(1.05);
 }
