@@ -27,10 +27,10 @@
                     </ul>
                 </div>
                 <div class="search-bar">
-                    <input type="text" placeholder="Enter a destination or keyword" id="searchInput">
+                    <input type="text" placeholder="Enter a destination or keyword ..." id="searchInput">
                     <i class="fa-solid fa-magnifying-glass" style="color: #007081; font-size:18px;"></i>
-                    <button id="searchBtn">Search</button>
-                    <button id="clearBtn">Clear</button>
+                    <button id="searchBtn" onclick="searchItem()">Search</button>
+                    <button id="clearBtn" onclick="clearItem()">Clear</button>
                 </div>
             </nav>
         </header>
@@ -50,6 +50,12 @@
                     <a href="#"><i class="fa-brands fa-youtube"></i></a>
                 </div>
             </section>
+            <div id="resultSection">
+                <div class="current-time" id="currentTime"></div>
+                <div class="results" id="results">
+                    <!-- Results will be displayed here -->
+                </div>
+            </div>
         </main>
     </section>
 
@@ -105,12 +111,12 @@
             <div class="formContainer">
                 <form id="form">
                     <label for="name">Name</label><br>
-                    <input type="text" id="name" placeholder="Enter your name"><br>
+                    <input type="text" id="name" placeholder="Enter your name" required><br>
                     <label for="email" id="email">Email</label><br>
-                    <input type="email" id="email" placeholder="Enter your email"><br>
+                    <input type="email" id="email" placeholder="Enter your email" required><br>
                     <label for="message">Message</label><br>
-                    <textarea id="message" placeholder="Enter your message"></textarea><br>
-                    <button type="submit" id="submitBtn">Submit</button><br>
+                    <textarea id="message" placeholder="Enter your message" required></textarea><br>
+                    <button type="submit" id="submitBtn" onclick="thankyou()">Submit</button><br>
                 </form>
             </div>
         </div>
