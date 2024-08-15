@@ -39,8 +39,3 @@
 
 ---
 
-<p align="center">
-  <img src="https://img.shields.io/github/stars/khadimmbaye0/FINAL_JS_PROJECT_COURSERA_IBM_FORMATION?style=social" alt="Stars">
-  <img src="https://img.shields.io/github/forks/khadimmbaye0/FINAL_JS_PROJECT_COURSERA_IBM_FORMATION?style=social" alt="Forks">
-</p>
-
