@@ -39,4 +39,4 @@
 <h2 align="center">🔗 <a href="https://khadimmbaye0.github.io/FINAL_JS_PROJECT_COURSERA_IBM_FORMATION/">Link to the Website</a> 🔗</h2>
 
 ---
-
+Nb: no responsive on this page 😭
