@@ -6,7 +6,7 @@
 <img src="./assets/pic.png" alt="certification">
 </div>
 
-<h1 align="center">Screen Shot</h1>
+<h1 align="center">Screen Shots</h1>
 <h1 align="center">🌟 Final JavaScript Project - IBM Coursera 🌟</h1>
 
 ## 🖥️ Visual Studio Code
