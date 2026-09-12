@@ -1,3 +1,11 @@
+
+<div align="center">
+
+## Coursera Certification:
+  
+<img src="./assets/pic.png" alt="certification">
+</div>
+
 <h1 align="center">Screen Shot</h1>
 <h1 align="center">🌟 Final JavaScript Project - IBM Coursera 🌟</h1>
 
@@ -33,7 +41,7 @@
 
 ## 🏛️ Temples Search
 <p align="center">
-  <img src="./assets/IMG/Screenshot 2024-08-12 204853.png" alt="Beaches Search">
+      <img src="./assets/IMG/Screenshot 2024-08-12 204853.png" style="display: flex; align-items: center;" alt="Beaches Search">
 </p>
 
 <h2 align="center">🔗 <a href="https://khadimmbaye0.github.io/FINAL_JS_PROJECT_COURSERA_IBM_FORMATION/">Link to the Website</a> 🔗</h2>
